@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jeevika Naturals | Ayurvedic Hair Care</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Google Analytics (Sample) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-XXXXXXX-X');
+  </script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/919999999999" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 z-50">
+    💬 Chat with Us
+  </a>
+
+  <!-- AI Chatbot Button -->
+  <button id="chatbotToggle" class="fixed bottom-20 right-6 bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 z-50">
+    🤖 Ask Jeevika
+  </button>
+
+  <!-- AI Chatbot Iframe (Hidden by default) -->
+  <div id="chatbotContainer" class="fixed bottom-28 right-6 w-96 max-w-full hidden z-50">
+    <iframe id="JotFormIFrame-0198502a77ec7d74aff26f9e38ed2f31cb2e"
+      title="Jeevika AI Consultant"
+      allowtransparency="true" allow="geolocation; microphone; camera; fullscreen"
+      src="https://agent.jotform.com/0198502a77ec7d74aff26f9e38ed2f31cb2e?embedMode=iframe&background=1&shadow=1"
+      frameborder="0" style="width: 100%; height: 600px; border: none; border-radius: 0.75rem;">
+    </iframe>
+  </div>
+
+  <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+  <script>
+    window.jotformEmbedHandler("iframe[id='JotFormIFrame-0198502a77ec7d74aff26f9e38ed2f31cb2e']", "https://www.jotform.com");
+    document.getElementById("chatbotToggle").addEventListener("click", function () {
+      const container = document.getElementById("chatbotContainer");
+      container.classList.toggle("hidden");
+    });
+  </script>
+
+  <!-- Header -->
+  <header class="bg-green-800 text-white p-6 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Jeevika Naturals</h1>
+      <nav>
+        <a href="#products" class="px-4 hover:underline">Products</a>
+        <a href="#reviews" class="px-4 hover:underline">Reviews</a>
+        <a href="#about" class="px-4 hover:underline">About</a>
+        <a href="#contact" class="px-4 hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Rest of your page continues here... (no changes to rest) -->
+</body>
+</html>
